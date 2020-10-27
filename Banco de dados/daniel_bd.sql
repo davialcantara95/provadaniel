@@ -1,0 +1,76 @@
+-- phpMyAdmin SQL Dump
+-- version 5.0.2
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Tempo de geração: 27-Out-2020 às 20:44
+-- Versão do servidor: 10.4.11-MariaDB
+-- versão do PHP: 7.2.30
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Banco de dados: `daniel_bd`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `processos`
+--
+
+CREATE TABLE `processos` (
+  `proc_id` int(11) NOT NULL,
+  `proc_titulo` varchar(255) NOT NULL,
+  `proc_requerentes` varchar(255) NOT NULL,
+  `proc_num_pub` varchar(255) NOT NULL,
+  `proc_num_inter` varchar(255) NOT NULL,
+  `proc_data_pub` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Extraindo dados da tabela `processos`
+--
+
+INSERT INTO `processos` (`proc_id`, `proc_titulo`, `proc_requerentes`, `proc_num_pub`, `proc_num_inter`, `proc_data_pub`) VALUES
+(24, ' (DE)  KÃLTEGERÃT  (EN)  REFRIGERATION DEVICE  (FR)  APPAREIL REFRIGERANT  ', ' BSH BOSCH UND SIEMENS HAUSGERÃTE GMBH [DE]/[DE] (AllExceptUS)  \r\n WOLDENBERG, Walter [DE]/[DE] (UsOnly)  \r\n KRANZ, Thomas [DE]/[DE] (UsOnly) \r\n WOLDENBERG, Walter   \r\n KRANZ, Thomas  \r\n BSH BOSCH UND SIEMENS HAUSGERÃTE GMBH  ', 'WO/2002/008676', ' PCT/EP2001/008247  ', '2002-01-31'),
+(25, ' (EN)  EXPANSION DEVICE FOR REFRIGERANT FLUID AND CONDITIONING CIRCUIT COMPRISING SAME  (FR)  DISPOSITIF DETENDEUR POUR FLUIDE FRIGORIGENE ET CIRCUIT DE CONDITIONNEMENT COMPRENANT UN TEL DISPOSITIF  ', ' MANULI AUTO FRANCE [FR]/[FR] (AllExceptUS)  \r\n BARON, Daniel [FR]/[FR] (UsOnly) \r\n BARON, Daniel  \r\n BENECH, FrÃ©dÃ©ric  ', 'WO/2002/008677', ' PCT/FR2001/002338  ', '2002-01-31'),
+(26, ' (EN)  EXPANSION DEVICE FOR REFRIGERANT FLUID AND CONDITIONING CIRCUIT COMPRISING SAME  (FR)  DISPOSITIF DETENDEUR POUR FLUIDE FRIGORIGENE ET CIRCUIT DE CONDITIONNEMENT COMPRENANT UN TEL DISPOSITIF  ', ' MANULI AUTO FRANCE [FR]/[FR] (AllExceptUS)  \r\n BARON, Daniel [FR]/[FR] (UsOnly) \r\n BARON, Daniel  \r\n BENECH, FrÃ©dÃ©ric  ', 'WO/2002/008677', ' PCT/FR2001/002338  ', '2002-01-31'),
+(27, ' (EN)  EXPANSION DEVICE FOR REFRIGERANT FLUID AND CONDITIONING CIRCUIT COMPRISING SAME  (FR)  DISPOSITIF DETENDEUR POUR FLUIDE FRIGORIGENE ET CIRCUIT DE CONDITIONNEMENT COMPRENANT UN TEL DISPOSITIF  ', ' MANULI AUTO FRANCE [FR]/[FR] (AllExceptUS)  \r\n BARON, Daniel [FR]/[FR] (UsOnly) \r\n BARON, Daniel  \r\n BENECH, FrÃ©dÃ©ric  ', 'WO/2002/008677', ' PCT/FR2001/002338  ', '2002-01-31'),
+(28, ' (DE)  KÃLTEGERÃT  (EN)  REFRIGERATION DEVICE  (FR)  APPAREIL REFRIGERANT  ', ' BSH BOSCH UND SIEMENS HAUSGERÃTE GMBH [DE]/[DE] (AllExceptUS)  \r\n WOLDENBERG, Walter [DE]/[DE] (UsOnly)  \r\n KRANZ, Thomas [DE]/[DE] (UsOnly) \r\n WOLDENBERG, Walter   \r\n KRANZ, Thomas  \r\n BSH BOSCH UND SIEMENS HAUSGERÃTE GMBH  ', 'WO/2002/008676', ' PCT/EP2001/008247  ', '2002-01-31'),
+(29, ' (DE)  KÃLTEGERÃT  (EN)  REFRIGERATION DEVICE  (FR)  APPAREIL REFRIGERANT  ', ' BSH BOSCH UND SIEMENS HAUSGERÃTE GMBH [DE]/[DE] (AllExceptUS)  \r\n WOLDENBERG, Walter [DE]/[DE] (UsOnly)  \r\n KRANZ, Thomas [DE]/[DE] (UsOnly) \r\n WOLDENBERG, Walter   \r\n KRANZ, Thomas  \r\n BSH BOSCH UND SIEMENS HAUSGERÃTE GMBH  ', 'WO/2002/008676', ' PCT/EP2001/008247  ', '2002-01-31'),
+(30, ' (DE)  KÃLTEGERÃT  (EN)  REFRIGERATION DEVICE  (FR)  APPAREIL REFRIGERANT  ', ' BSH BOSCH UND SIEMENS HAUSGERÃTE GMBH [DE]/[DE] (AllExceptUS)  \r\n WOLDENBERG, Walter [DE]/[DE] (UsOnly)  \r\n KRANZ, Thomas [DE]/[DE] (UsOnly) \r\n WOLDENBERG, Walter   \r\n KRANZ, Thomas  \r\n BSH BOSCH UND SIEMENS HAUSGERÃTE GMBH  ', 'WO/2002/008676', ' PCT/EP2001/008247  ', '2002-01-31'),
+(31, ' (DE)  KÃLTEGERÃT  (EN)  REFRIGERATION DEVICE  (FR)  APPAREIL REFRIGERANT  ', ' BSH BOSCH UND SIEMENS HAUSGERÃTE GMBH [DE]/[DE] (AllExceptUS)  \r\n WOLDENBERG, Walter [DE]/[DE] (UsOnly)  \r\n KRANZ, Thomas [DE]/[DE] (UsOnly) \r\n WOLDENBERG, Walter   \r\n KRANZ, Thomas  \r\n BSH BOSCH UND SIEMENS HAUSGERÃTE GMBH  ', 'WO/2002/008676', ' PCT/EP2001/008247  ', '2002-01-31');
+
+--
+-- Índices para tabelas despejadas
+--
+
+--
+-- Índices para tabela `processos`
+--
+ALTER TABLE `processos`
+  ADD PRIMARY KEY (`proc_id`);
+
+--
+-- AUTO_INCREMENT de tabelas despejadas
+--
+
+--
+-- AUTO_INCREMENT de tabela `processos`
+--
+ALTER TABLE `processos`
+  MODIFY `proc_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
